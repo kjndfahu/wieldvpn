@@ -7,15 +7,19 @@ import {Footer} from "@/components/shared/footer";
 
 interface Props{
     className?:string,
+    aboutus: any;
+    reviews: any;
+    price: any;
+    scrollTo: any;
 }
 
-export const Main: React.FC<Props> = ({className}) => {
+export const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, className}) => {
     return (
         <div className="flex flex-col">
-            <Hero/>
-            <AboutUs/>
-            <Reviews/>
-            <BuyVpn/>
+            <Hero scrollTo={scrollTo} price={price}/>
+            <AboutUs aboutus={aboutus}/>
+            <Reviews reviews={reviews}/>
+            <BuyVpn price={price}/>
             <Footer/>
         </div>
     )

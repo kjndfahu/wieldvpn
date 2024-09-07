@@ -7,13 +7,14 @@ import downline from '../../assets/down line.png'
 
 interface Props {
     className?: string
+    aboutus: any;
 }
 
-export const AboutUs: React.FC<Props> = ({className}) => {
+export const AboutUs: React.FC<Props> = ({aboutus, className}) => {
     return (
-        <div className="flex items-center z-30 justify-center flex-col rounded-tl-[68px] rounded-tr-[68px] mt-64">
-            <Image src={downline} alt="line"/>
-            <Image src={biglogo} alt="biglogo" className="absolute z-20 top-[275px] right-[-100px]"/>
+        <div ref={aboutus} className="flex items-center z-30 justify-center flex-col rounded-tl-[68px] rounded-tr-[68px] mt-64">
+            <Image className="sm" src={downline} alt="line"/>
+            <Image src={biglogo} alt="biglogo" className="lg:flex absolute z-20 top-[325px] right-[-100px] hidden"/>
             <div
                 className="flex flex-col z-10 items-center text-white max-w-[1030px] mt-[170px] mb-[140px]">
                 <h3 className="text-[48px] leading-[58px] italic font-semibold">Немного о нас</h3>

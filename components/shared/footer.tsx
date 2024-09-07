@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import line from "@/assets/line down text.png";
+import Link from "next/link";
 
 interface Props{
     className?: string;
@@ -9,7 +10,7 @@ interface Props{
 export const Footer: React.FC<Props> = ({className}) => {
     return (
         <div className="flex items-center justify-center z-20 flex-col rounded-tl-[68px] gap-4 rounded-tr-[68px] bg-black mt-16 py-16 border border-white">
-            <div className="flex flex-row gap-1.5">
+            <div className="flex md:py-0 md:px-0 flex-row gap-1.5 md:border-none border-white border-[1px] py-[10px] px-[19px] rounded-[7px]">
                 <svg
                     width={25}
                     height={24}
@@ -30,18 +31,22 @@ export const Footer: React.FC<Props> = ({className}) => {
                         fill="white"
                     />
                 </svg>
-                <h3 className="text-white font-semibold text-[24px] leading-6">Telegram</h3>
+                <h3 className="text-white font-semibold md:text-[24px] leading-6 text-[32px]">Telegram</h3>
             </div>
 
-            <div className="flex flex-row text-[20px] leading-6 text-white gap-[31px]">
-                <h4>О нас</h4>
-                <h4>Помощь</h4>
-                <h4>Статус сервисов</h4>
-            </div>
+            <div className="flex md:flex-col gap-10">
+                <div className="flex md:flex-row md:text-[20px] leading-6 text-white md:gap-[31px] flex-col text-[15px] gap-2.5">
+                    <h4>О нас</h4>
+                    <h4>Помощь</h4>
+                    <Link href="https://stats.uptimerobot.com/Q5MDPCXK9L">
+                        <h4>Статус сервисов</h4>
+                    </Link>
+                </div>
 
-            <div className="mt-12 text-white text-center">
-                <h5 className="text-[20px] leading-6 font-normal">abuse@wieldvpn.ru</h5>
-                <h3 className="text-[24px] leading-[29px] font-semibold">©2022-2024 WieldVPN</h3>
+                <div className="mt-12 text-white md:text-center">
+                    <h5 className="md:text-[20px] leading-6 font-normal text-[15px]">abuse@wieldvpn.ru</h5>
+                    <h3 className="md:text-[24px] leading-[29px] font-semibold text-[10px]">©2022-2024 WieldVPN</h3>
+                </div>
             </div>
         </div>
     )

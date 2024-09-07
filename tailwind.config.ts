@@ -13,6 +13,14 @@ const config: Config = {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
   		},
+		screens: {
+			lghero: "1050px",
+			  lg: "950px",
+			mdbvp: "815px",
+			  md: "600px",
+			smbvp: "380px",
+			sm: "320px"
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

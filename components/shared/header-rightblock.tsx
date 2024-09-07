@@ -15,12 +15,11 @@ export const HeaderRightblock: React.FC<Props> = ({className}) => {
 
     return (
         <>
-            <div className="flex gap-10 text-white text-[24px] leading-6 font-normal mr-10 ">
-                <span className="cursor-pointer">Помощь</span>
+            <div className="lg:flex lg:gap-10 lg:text-white lg:text-[24px] lg:leading-6 lg:font-normal lg:mr-10 hidden items-center">
+                <span className="cursor-pointerr">Помощь</span>
                 <SortPopup/>
             </div>
 
-           <BurgerMenu isActive={isActive} setActive={setActive}/>
         </>
     )
 }

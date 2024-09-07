@@ -15,7 +15,7 @@ interface Props{
 
 export const SliderBlock: React.FC<Props> = ({className}) => {
     return (
-        <div className="flex z-10 items-center justify-center mt-10">
+        <div className="flex z-30 items-center justify-center mt-10">
             <Swiper
                 spaceBetween={70}
                 speed={800}

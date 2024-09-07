@@ -2,15 +2,19 @@ import React from 'react'
 
 interface Props{
     className?: string;
+    aboutus: any;
+    reviews: any;
+    price: any;
+    scrollTo: any;
 }
 
-export const HeaderNavigation: React.FC<Props> =({className}) => {
+export const HeaderNavigation: React.FC<Props> =({aboutus, reviews, price, scrollTo, className}) => {
 
     return (
-        <div className="flex cursor-pointer justify-center items-center gap-10 text-white text-[24px] leading-6 font-normal">
-            <div className="cursor-pointer">О нас</div>
-            <div className="cursor-pointer">Отзывы</div>
-            <div className="cursor-pointer">Цены</div>
+        <div className="lg:flex lg:z-30 lg:cursor-pointer lg:justify-center lg:items-center lg:gap-10 lg:text-white lg:text-[24px] lg:leading-6 lg:font-normal hidden">
+            <div onClick={() => scrollTo(aboutus.current)} className="cursor-pointer">О нас</div>
+            <div onClick={() => scrollTo(reviews.current)} className="cursor-pointer">Отзывы</div>
+            <div onClick={() => scrollTo(price.current)} className="cursor-pointer">Цены</div>
         </div>
     )
 }

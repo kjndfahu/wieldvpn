@@ -8,20 +8,20 @@ import {Buybtn} from "@/components/shared/buybtn";
 
 interface Props {
     className?: string
+    price: any;
 }
 
-export const BuyVpn: React.FC<Props> = ({className}) => {
+export const BuyVpn: React.FC<Props> = ({price, className}) => {
     return (
-
-            <div className="flex mt-64 items-center justify-center">
+            <div ref={price} className="flex mt-64 items-center justify-center">
                 <div className="flex flex-col z-20 items-center justify-center">
-                    <div className="flex flex-col gap-16 items-center justify-center">
-                        <h2 className="text-[96px] text-white font-semibold leading-[82px]">Купить лучший<br/> <span
-                            className="text-[348px] leading-[248px] font-bold text-[#01fcee]">VPN</span></h2>
-                        <MoveDown color="#ffffff" className="h-[68px] w-[100px]"/>
+                    <div className="flex flex-col mdbvp:gap-16 items-center justify-center text-center md:gap-10">
+                        <h2 className="mdbvp:text-[96px] text-white font-semibold mdbvp:leading-[82px] md:text-[70px] md:leading-[60px] smbvp:text-[44px] smbvp:leading-[50px] text-[35px] leading-[35px]">Купить лучший<br/> <span
+                            className="mdvp:text-[348px] mdbvp:leading-[248px] font-bold text-[#01fcee] md:text-[250px] md:leading-[250px] smbvp:text-[158px] smbvp:leading-[158px] text-[132px] leading-[132px]">VPN</span></h2>
+                        <MoveDown color="#ffffff" className="md:h-[68px] md:w-[100px] h-[40px]"/>
                         <Buybtn/>
                     </div>
-                    <div className="h-[200px]"></div>
+
                 </div>
                 <Image className="absolute z-10" src={bigletters} alt="bigletters"/>
                 <Image className="absolute z-[1] w-full mt-24" src={lights} alt="lights"/>
