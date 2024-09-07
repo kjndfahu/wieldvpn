@@ -1,0 +1,28 @@
+{
+  "HeaderNavigation": {
+    "aboutus": "About Us",
+    "reviews": "Reviews",
+    "prices": "Prices",
+    "help": "Help",
+    "status": "Service status"
+  },
+  "HeaderRightblock": {
+    "help": "Help"
+  },
+  "Hero": {
+    "titleone": " - fast, reliable,",
+    "titletwo": "confidential.",
+    "btn": "Purchase"
+  },
+  "AboutUs": {
+    "title": "A little about us",
+    "firsttext": "We are a domestic VPN project that allows you to use foreign services after they are blocked in the Russian Federation",
+    "secondtext":"We opened at the very beginning of the blockades in 2022, and have been working steadily for over two years since then. We are located in reliable data centers in most of the world with Uptime 99.99%."
+  },
+  "BuyVpn": {
+    "title": "Buy the best"
+  },
+  "BuyBtn": {
+    "btn": "Purchase"
+  }
+}

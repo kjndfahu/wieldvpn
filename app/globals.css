@@ -46,12 +46,17 @@ body{
 }
 
 .swiper-button-next{
+  display: flex;
   border-radius: 50px;
   border: 1px solid white;
   background: #232323;
   opacity: 0.9;
   backdrop-filter: blur(100px);
   color: white;
+  width: 113px !important;
+  height: 113px !important;
+  top: 30% !important;
+  right: 50px !important;
 }
 
 .swiper-button-next::after{
@@ -63,12 +68,27 @@ body{
 }
 
 .swiper-button-prev{
+  display: flex;
   border-radius: 50px;
   border: 1px solid white;
   background: #232323;
   opacity: 0.9;
   backdrop-filter: blur(100px);
   color: white;
+  width: 113px !important;
+  height: 113px !important;
+  top: 30% !important;
+  left: 50px !important;
+}
+
+@media(max-width: 815px){
+  .swiper-button-prev{
+    display: none !important;
+  }
+
+  .swiper-button-next{
+    display: none !important;
+  }
 }
 
 
