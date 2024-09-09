@@ -5,6 +5,7 @@ import line from "@/assets/line down text.png";
 import downline from "@/assets/down line.png";
 import openmenu from '../../assets/openmenu.png'
 import {ChevronDown} from "lucide-react";
+import {useTranslations} from "next-intl";
 
 interface Props{
     className?:string
@@ -14,17 +15,17 @@ interface Props{
 
 export const AdaptiveAboutUs:React.FC<Props> = ({isReviews, setReviews, className}) => {
     const [isActive, setActive] = React.useState(false)
+    const t = useTranslations("AboutUs")
 
     return (
         <>
             <div className="flex flex-col z-30 justify-center mt-48 lg:hidden">
                 <div className="ml-5">
-                    <div className="md:text-[48px] smbvp:text-[40px] sm:text-[36px] text-white font-semibold italic">Немного о нас</div>
+                    <div className="md:text-[48px] smbvp:text-[40px] sm:text-[36px] text-white font-semibold italic">{t('title')}</div>
                     <Image src={line} alt="logo"/>
                     {isActive && (
                         <div className="md:text-[22px] smbvp:text-[19px] py-5 px-4 mt-1 text-white font-semibold border-l-2 border-r-2">
-                            Мы отечественный VPN-проект, который позволяет пользоваться зарубежными сервисами после их блокировки в РФ
-                            Открылись ещё в самом начале блокировок в 2022 году, с тех пор стабильно работаем уже более двух лет. Располагаемся в надёжных ЦОД большинства мира с Uptime 99.99%.
+                            {t('firsttext')}{t('secondtext')}
                         </div>
                     )}
                 </div>
