@@ -1,14 +1,12 @@
-'use client'
-
-import React, {ChangeEvent, useState, useTransition} from 'react'
-import { useRouter } from 'next/navigation';
+import React, {ChangeEvent, useTransition} from 'react'
+import {useRouter} from "next/navigation";
 import {useLocale} from "next-intl";
 
 interface Props{
-    className?: string;
+    className?:string,
 }
 
-export const SortPopup: React.FC<Props> =({className}) => {
+export const AdaptiveCheck: React.FC<Props> = ({className}) => {
     const [isActive, setActive] = React.useState(false)
     const [isPending, startTransition] = useTransition();
     const router = useRouter();
@@ -27,12 +25,12 @@ export const SortPopup: React.FC<Props> =({className}) => {
             <p className='sr-only'>change language</p>
             <select
                 defaultValue={localActive}
-                className='bg-transparent py-2'
+                className=' rounded-3xl bg-black/20 z-[50] py-2 text-white text-[25px]'
                 onChange={onSelectChange}
                 disabled={isPending}
             >
-                <option value='en'>En</option>
-                <option value='ru'>Ru</option>
+                <option className="text-white bg-black/20 rounded-full text-[20px]" value='en'>En</option>
+                <option className="text-white bg-black/20 rounded-full text-[20px]" value='ru'>Ru</option>
             </select>
         </label>
     )

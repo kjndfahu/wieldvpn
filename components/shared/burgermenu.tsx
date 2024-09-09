@@ -2,6 +2,7 @@
 
 import React from 'react'
 import {BurgerPopup} from "@/components/shared/burgerpopup";
+import {AdaptiveCheck} from "@/components/shared/adaptivecheck";
 
 interface Props {
     className?: string;
@@ -13,8 +14,11 @@ interface Props {
 
 export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, className}) => {
     const [isActive, setActive] = React.useState(false)
+
     return (
-        <div className="lg:hidden flex z-50">
+        <div className="lg:hidden items-center flex z-50">
+            <AdaptiveCheck/>
+
             {isActive ? (
                 <div onClick={() => setActive(!isActive)} className="flex z-[100] cursor-pointer mr-3 py-6 px-5 bg-white rounded-full" >
                     <svg

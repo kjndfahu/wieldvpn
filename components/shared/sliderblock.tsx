@@ -25,7 +25,7 @@ export const SliderBlock: React.FC<Props> = ({className}) => {
                 slidesPerView={2}
                 loop={true}
                 modules={[Navigation, Pagination]}
-                className="flex items-center justify-center h-[38vh]">
+                className="flex items-center justify-center h-[50vh]">
 
                 <SwiperSlide className="text-white text-[32px] leading-[27px] w-[500px]">
                     Я очень довольна VPN-сервисом! Отличная скорость, стабильное соединение, блокировка рекламы и простота использования за довольно небольшую цену. Очень рекомендую его к использованию!

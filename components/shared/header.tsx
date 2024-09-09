@@ -9,6 +9,7 @@ import headerlogo from '../../assets/headerlogo.png';
 import downline from "@/assets/down line.png";
 import {BurgerMenu} from "@/components/shared/burgermenu";
 import {useTranslations} from "next-intl";
+import {AdaptiveCheck} from "@/components/shared/adaptivecheck";
 
 interface Props{
     className?:string

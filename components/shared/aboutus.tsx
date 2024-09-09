@@ -24,6 +24,7 @@ export const AboutUs: React.FC<Props> = ({aboutus, className}) => {
                 <p className="lg:flex hidden text-[24px] leading-6 font-semibold px-10 mt-10 border-l-2 border-r-2 ">{t('firsttext')}<br/>
                     {t('secondtext')}</p>
             </div>
+            <Image className="sm" src={downline} alt="line"/>
             <Image className="absolute z-[1] w-full lg:h-[545px] sm:h-[100px]" src={lights} alt="lights"/>
 
         </div>
