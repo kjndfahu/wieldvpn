@@ -4,9 +4,11 @@ import React from 'react'
 import Image from 'next/image'
 import {ChevronDown} from "lucide-react";
 import {BurgerMenu} from "@/components/shared/burgermenu";
-import {SortPopup} from "@/components/shared/sortpopup";
+
 import {useTranslations} from "next-intl";
 import Link from "next/link";
+import {SortPopup} from "@/components/shared/sortpopup";
+
 
 interface Props{
     className?:string;

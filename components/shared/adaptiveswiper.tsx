@@ -20,9 +20,9 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                     grabCursor={true}
                     loop={true}
                     modules={[Pagination]}
-                    className="flex items-center justify-center gap-[100px] w-[100vw]">
+                    className="flex items-center justify-center gap-[100px] w-[100vw] ">
 
-                <SwiperSlide className="bg-block">
+                <SwiperSlide className="bg-block h-[250px]">
                     <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[19px] sm:text-[17px] text-white py-3 ">
                         <Image className="absolute z-[60]" src={profile3d} alt="profile3d"/>
                         <h2 className="absolute z-[60] mx-2 md:mt-[120px] smbvp:mt-[65px] sm:mt-[60px]">Я очень довольна VPN-сервисом! Отличная скорость, стабильное соединение, блокировка рекламы и простота использования за довольно небольшую цену. Очень рекомендую его к использованию!</h2>

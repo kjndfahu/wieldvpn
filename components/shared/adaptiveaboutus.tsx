@@ -19,17 +19,17 @@ export const AdaptiveAboutUs:React.FC<Props> = ({isReviews, setReviews, classNam
         <>
             <div className="flex flex-col z-30 justify-center mt-48 lg:hidden">
                 <div className="ml-5">
-                    <div className="text-[48px] text-white font-semibold italic">Немного о нас</div>
+                    <div className="md:text-[48px] smbvp:text-[40px] sm:text-[36px] text-white font-semibold italic">Немного о нас</div>
                     <Image src={line} alt="logo"/>
                     {isActive && (
-                        <div className="text-[22px] py-5 px-4 mt-1 text-white font-semibold border-l-2 border-r-2">
+                        <div className="md:text-[22px] smbvp:text-[19px] py-5 px-4 mt-1 text-white font-semibold border-l-2 border-r-2">
                             Мы отечественный VPN-проект, который позволяет пользоваться зарубежными сервисами после их блокировки в РФ
                             Открылись ещё в самом начале блокировок в 2022 году, с тех пор стабильно работаем уже более двух лет. Располагаемся в надёжных ЦОД большинства мира с Uptime 99.99%.
                         </div>
                     )}
                 </div>
                 {isActive ? (
-                    <Image className="absolute w-full h-[33vh]" src={block} alt="block"/>
+                    <Image className="absolute w-full smbvp:h-[33vh] sm:h-[30vh]" src={block} alt="block"/>
                     ) : (
                     <Image className="absolute w-full h-[15vh]" src={block} alt="block"/>
                 )}

@@ -24,5 +24,9 @@
   },
   "BuyBtn": {
     "btn": "Приобрести"
+  },
+  "SortPopup":{
+    "label": "Change language",
+    "locale":"{locale, select, ru {Ru} en {En} other {Unknown}}"
   }
 }

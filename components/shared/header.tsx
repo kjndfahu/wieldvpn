@@ -19,6 +19,7 @@ interface Props{
 }
 
 export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className}) => {
+
     return (
         <>
             <div className="absolute z-1 mb-10">

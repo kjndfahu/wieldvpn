@@ -8,7 +8,7 @@ import {Main} from "@/components/shared/main";
 import gsap from 'gsap';
 
 
-export default async function Home() {
+export default function Home() {
     gsap.registerPlugin(ScrollToPlugin)
     const aboutus = React.useRef(null)
     const reviews = React.useRef(null)
