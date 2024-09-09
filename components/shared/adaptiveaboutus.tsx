@@ -29,7 +29,7 @@ export const AdaptiveAboutUs:React.FC<Props> = ({isReviews, setReviews, classNam
                     )}
                 </div>
                 {isActive ? (
-                    <Image className="absolute w-full smbvp:h-[33vh] sm:h-[30vh]" src={block} alt="block"/>
+                    <Image className="absolute w-full smbvp:h-[50vh] sm:h-[45vh]" src={block} alt="block"/>
                     ) : (
                     <Image className="absolute w-full h-[15vh]" src={block} alt="block"/>
                 )}

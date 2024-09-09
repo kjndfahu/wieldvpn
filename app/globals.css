@@ -25,6 +25,23 @@ body{
   align-items: center;
 }
 
+.swiper-pagination {
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw !important;
+  left: 28vw !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
 .swiper-slide {
   transition: filter 0.3s ease, transform 0.3s ease;
   filter: blur(1px);

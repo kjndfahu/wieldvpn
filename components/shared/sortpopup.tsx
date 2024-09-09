@@ -1,8 +1,12 @@
-import React, {useState} from 'react'
-import { useRouter } from 'next/router';
+'use client'
+
+import React, {ChangeEvent, useState, useTransition} from 'react'
+import { useRouter } from 'next/navigation';
 import {ChevronDown, ChevronUp} from "lucide-react";
 import {Switch} from "@/components/ui/switch";
-import {router} from "next/client";
+import i18n from "@/i18n";
+import {locales} from "@/config";
+import {useLocale} from "next-intl";
 
 interface Props{
     className?: string;
@@ -10,31 +14,30 @@ interface Props{
 
 export const SortPopup: React.FC<Props> =({className}) => {
     const [isActive, setActive] = React.useState(false)
-    const [toggle, setToggle] = React.useState<boolean>(false)
+    const [isPending, startTransition] = useTransition();
+    const router = useRouter();
+    const localActive = useLocale();
+
+    const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        const nextLocale = e.target.value;
+        startTransition(() => {
+            router.replace(`/${nextLocale}`);
+        });
+    };
+
 
     return (
-        <div className="flex flex-row">
-            {isActive && (
-                <div className="flex items-center">
-                    <Switch onClick={() => setToggle(!toggle)} className="rotate-90"/>
-                </div>
-            )}
-            <div onClick={() => setActive(!isActive)} className="flex flex-col cursor-pointer">
-                <div className="flex flex-row">
-                    En
-                    {isActive ? (
-                        <ChevronUp className="mt-1" width={20}/>
-                    ) : (
-                        <ChevronDown className="mt-1" width={20}/>
-                    )}
-                </div>
-                {isActive && (
-                    <div className="flex flex-col leading-[30px]">
-                        <span className="leading-[4px]">-</span>
-                        Ru
-                    </div>
-                )}
-            </div>
-        </div>
+        <label className='rounded'>
+            <p className='sr-only'>change language</p>
+            <select
+                defaultValue={localActive}
+                className='bg-transparent py-2'
+                onChange={onSelectChange}
+                disabled={isPending}
+            >
+                <option value='en'>En</option>
+                <option value='ru'>Ru</option>
+            </select>
+        </label>
     )
 }
