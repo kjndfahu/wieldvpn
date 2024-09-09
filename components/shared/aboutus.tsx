@@ -14,18 +14,18 @@ interface Props {
 export const AboutUs: React.FC<Props> = ({aboutus, className}) => {
     const t = useTranslations("AboutUs")
     return (
-        <div ref={aboutus} className="flex items-center z-30 justify-center flex-col rounded-tl-[68px] rounded-tr-[68px] mt-64">
+        <div ref={aboutus} className="lg:flex hidden items-center z-30 justify-center flex-col rounded-tl-[68px] rounded-tr-[68px] mt-64">
             <Image className="sm" src={downline} alt="line"/>
             <Image src={biglogo} alt="biglogo" className="lg:flex absolute z-20 top-[325px] right-[-100px] hidden"/>
             <div
                 className="flex flex-col z-10 items-center text-white max-w-[1030px] mt-[170px] mb-[140px]">
                 <h3 className="text-[48px] leading-[58px] italic font-semibold">{t('title')}</h3>
                 <Image src={line} alt="logo"/>
-                <p className="text-[24px] leading-6 font-semibold px-10 mt-10 border-l-2 border-r-2 ">{t('firsttext')}<br/>
+                <p className="lg:flex hidden text-[24px] leading-6 font-semibold px-10 mt-10 border-l-2 border-r-2 ">{t('firsttext')}<br/>
                     {t('secondtext')}</p>
             </div>
-            <Image className="absolute z-[1] w-full h-[545px]" src={lights} alt="lights"/>
-            <Image src={downline} alt="line"/>
+            <Image className="absolute z-[1] w-full lg:h-[545px] sm:h-[100px]" src={lights} alt="lights"/>
+
         </div>
     )
 }

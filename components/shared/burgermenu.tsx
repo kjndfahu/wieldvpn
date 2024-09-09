@@ -5,9 +5,13 @@ import {BurgerPopup} from "@/components/shared/burgerpopup";
 
 interface Props {
     className?: string;
+    aboutus: any;
+    reviews: any;
+    price: any;
+    scrollTo: any;
 }
 
-export const BurgerMenu: React.FC<Props> = ({className}) => {
+export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, className}) => {
     const [isActive, setActive] = React.useState(false)
     return (
         <div className="lg:hidden flex z-50">
@@ -42,7 +46,7 @@ export const BurgerMenu: React.FC<Props> = ({className}) => {
             )}
 
             {isActive && (
-                <BurgerPopup/>
+                <BurgerPopup aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
             )}
         </div>
     )

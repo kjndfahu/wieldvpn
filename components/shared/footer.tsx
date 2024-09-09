@@ -39,7 +39,9 @@ export const Footer: React.FC<Props> = ({className}) => {
             <div className="flex md:flex-col gap-10">
                 <div className="flex md:flex-row md:text-[20px] leading-6 text-white md:gap-[31px] flex-col text-[15px] gap-2.5">
                     <h4>{t('aboutus')}</h4>
-                    <h4>{t('help')}</h4>
+                    <Link href="https://help.wieldvpn.ru/">
+                        <h4>{t('help')}</h4>
+                    </Link>
                     <Link href="https://stats.uptimerobot.com/Q5MDPCXK9L">
                         <h4>{t('status')}</h4>
                     </Link>

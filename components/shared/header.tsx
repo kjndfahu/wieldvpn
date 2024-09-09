@@ -31,7 +31,7 @@ export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  cla
                     <Image className="md:ml-[100px] md:w-[100px] z-10 ml-[25px] w-[70px]" src={headerlogo} alt="biglogo" width={88}/>
                     <HeaderNavigation aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
                     <HeaderRightblock/>
-                    <BurgerMenu/>
+                    <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
                 </div>
                 <Image className="lg:flex hidden"  src={downline} alt="line"/>
 
