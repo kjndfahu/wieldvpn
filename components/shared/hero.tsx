@@ -29,9 +29,6 @@ export const Hero:React.FC<Props> = ({scrollTo, price, className}) => {
                 </div>
             </div>
 
-            {/*<div className="absolute z-[1] mt-[-115px]">*/}
-            {/*    <Image className="flex z-[1]" src={vpntext} alt="vpntext"/>*/}
-            {/*</div>*/}
         </div>
     )
 }
