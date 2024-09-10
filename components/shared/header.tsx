@@ -22,22 +22,14 @@ interface Props{
 export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className}) => {
 
     return (
-        <>
-            <div className="absolute z-1 mb-10">
-                <Image src={light} alt="light"/>
+        <header className="z-[100] py-8">
+            <div className="flex items-center justify-between">
+                <Image className="w-[88px]" src={headerlogo} alt="logo"/>
+                <HeaderNavigation aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
+                <HeaderRightblock/>
+                <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
             </div>
-
-            <header className={cn('py-[29px] z-[100]', className)}>
-                <Image className="lg:flex hidden" src={downline} alt="line"/>
-                <div className="flex items-center w-[100vw] justify-between lg:bg-white/10 py-4 px-2 lg:backdrop-blur-[50px] md:bg-transparent">
-                    <Image className=" w-[100px]" src={headerlogo} alt="sasas"/>
-                    <HeaderNavigation aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
-                    <HeaderRightblock/>
-                    <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
-                </div>
-                <Image className="lg:flex hidden"  src={downline} alt="line"/>
-            </header>
-        </>
+        </header>
 
     )
 }

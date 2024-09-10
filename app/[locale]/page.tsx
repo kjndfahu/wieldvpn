@@ -16,7 +16,7 @@ export default function Home() {
     const scrollTo = (target:any) => gsap.to(window, {duration: 1, scrollTo: target})
 
   return (
-   <div>
+   <div className="w-[100vw]">
            <Header aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
            <Main aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
    </div>
