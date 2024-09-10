@@ -29,14 +29,13 @@ export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  cla
 
             <header className={cn('py-[29px] z-[100]', className)}>
                 <Image className="lg:flex hidden" src={downline} alt="line"/>
-                <div className="flex items-center justify-between lg:bg-white/10 py-4 lg:backdrop-blur-[50px] md:bg-transparent">
-                    <Image className="md:ml-[100px] md:w-[100px] z-10 ml-[25px] w-[70px]" src={headerlogo} alt="biglogo" width={88}/>
+                <div className="flex items-center w-[100vw] justify-between lg:bg-white/10 py-4 px-2 lg:backdrop-blur-[50px] md:bg-transparent">
+                    <Image className=" w-[100px]" src={headerlogo} alt="sasas"/>
                     <HeaderNavigation aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
                     <HeaderRightblock/>
                     <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
                 </div>
                 <Image className="lg:flex hidden"  src={downline} alt="line"/>
-
             </header>
         </>
 

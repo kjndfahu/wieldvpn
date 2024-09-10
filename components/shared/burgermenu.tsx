@@ -16,11 +16,12 @@ export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, 
     const [isActive, setActive] = React.useState(false)
 
     return (
-        <div className="lg:hidden items-center flex z-50">
+        <div className=" lg:hidden  items-center flex z-50">
             <AdaptiveCheck/>
 
             {isActive ? (
-                <div onClick={() => setActive(!isActive)} className="flex z-[100] cursor-pointer mr-3 py-6 px-5 bg-white rounded-full" >
+                <div onClick={() => setActive(!isActive)}
+                     className="flex z-[100] cursor-pointer mr-3 py-6 px-5 bg-white rounded-full">
                     <svg
                         width={30}
                         height={24}
