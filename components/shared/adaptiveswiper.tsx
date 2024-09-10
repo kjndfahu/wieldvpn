@@ -15,10 +15,10 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
     const t = useTranslations("Reviews")
     return (
         <div className="z-[100] md:mt-[50px] w-[100vw] ">
-            <Swiper spaceBetween={10}
+            <Swiper spaceBetween={30}
                     centeredSlides={true}
                     pagination={true}
-                    speed={1200}
+                    speed={1800}
                     slidesPerView={1.35}
                     grabCursor={true}
                     loop={true}
