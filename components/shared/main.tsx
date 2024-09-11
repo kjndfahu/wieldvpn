@@ -15,7 +15,7 @@ interface Props{
     scrollTo: any;
 }
 
-export const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, className}) => {
+const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, className}) => {
     const [isReviews, setReviews] = useState<boolean>(false);
 
     return (
@@ -30,3 +30,5 @@ export const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, classN
         </div>
     )
 }
+
+export default Main;

@@ -21,13 +21,13 @@ export const AdaptiveCheck: React.FC<Props> = ({className}) => {
 
 
     return (
-        <div>
+        <div >
             <label className='w-[10vw] rounded mb-2 text-sm font-medium text-gray-900 dark:text-white'>
                 <p className='sr-only'>change
                     language</p>
                 <select
                     defaultValue={localActive}
-                    className=' rounded-3xl bg-black/20 z-[50] py-2 text-white text-[25px]'
+                    className='rounded-3xl bg-black/20 py-2 text-white text-[25px]'
                     onChange={onSelectChange}
                     disabled={isPending}
                 >

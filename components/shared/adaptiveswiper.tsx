@@ -18,12 +18,15 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
             <Swiper spaceBetween={30}
                     centeredSlides={true}
                     pagination={true}
-                    speed={1800}
+                    speed={1600}
+                    touchRatio={1}
+                    touchAngle={30}
+                    threshold={30}
                     slidesPerView={1.35}
                     grabCursor={true}
                     loop={true}
                     modules={[Pagination]}
-                    className="flex items-center justify-center gap-[100px] w-[100vw] ">
+                    className="flex items-center justify-center gap-[100px] w-[100vw] h-[500px]" >
 
                 <SwiperSlide className="bg-block h-[250px]">
                     <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[19px] sm:text-[17px] text-white py-3 ">

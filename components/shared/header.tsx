@@ -18,8 +18,7 @@ interface Props{
     price: any;
     scrollTo: any;
 }
-
-export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className}) => {
+ const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className}) => {
 
     return (
         <>
@@ -27,10 +26,10 @@ export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  cla
                 <Image src={light} alt="light"/>
             </div>
 
-            <header className={cn('py-[29px] z-[100] w-[100vw] px-6', className)}>
+            <header className={cn('py-[29px] z-[100] w-[100vw]', className)}>
                 <Image className="lg:flex hidden" src={downline} alt="line"/>
                 <div className="flex items-center justify-between lg:bg-white/10 lg:backdrop-blur-[50px] md:bg-transparent">
-                    <Image className="mdbvp:w-[88px] sm:w-[60px]" src={headerlogo} alt="logo"/>
+                    <Image className="mdbvp:w-[88px] w-[60px] ml-10" src={headerlogo} alt="logo"/>
                     <HeaderNavigation aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
                     <HeaderRightblock/>
                     <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
@@ -41,3 +40,4 @@ export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  cla
 
     )
 }
+export default Header;

@@ -20,7 +20,7 @@ export const Hero:React.FC<Props> = ({scrollTo, price, className}) => {
 
             <div className="flex flex-row justify-between mx-5 lg:hidden">
                 <div></div>
-                <div className="flex items-center justify-center z-50 border-dashed border-[1px] py-2 px-2 rounded-2xl">
+                <div className="flex items-center justify-center z-20 border-dashed border-[1px] py-2 px-2 rounded-2xl">
                     <div
                         onClick={() => scrollTo(price.current)}
                         className="flex bg-[#00FFF0] cursor-pointer md:py-5 md:px-7 md:text-[32px] text-black [box-shadow:1px_25px_86px_28px_rgba(0,255,238,0.20)] font-bold rounded-2xl text-[20px] py-3 px-6">
