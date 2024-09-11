@@ -10,9 +10,11 @@ interface Props {
     reviews: any;
     price: any;
     scrollTo: any;
+    isReviews: boolean;
+    setReviews: Function;
 }
 
-export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, className}) => {
+export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, className, isReviews, setReviews}) => {
     const [isActive, setActive] = React.useState(false)
 
     return (
@@ -53,7 +55,7 @@ export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, 
             )}
 
             {isActive && (
-                <BurgerPopup aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
+                <BurgerPopup aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo} isReviews={isReviews} setReviews={setReviews}/>
             )}
         </div>
     )

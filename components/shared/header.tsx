@@ -17,8 +17,10 @@ interface Props{
     reviews: any;
     price: any;
     scrollTo: any;
+    isReviews: boolean;
+    setReviews: Function;
 }
- const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className}) => {
+ const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className, isReviews, setReviews,}) => {
 
     return (
         <>
@@ -32,7 +34,7 @@ interface Props{
                     <Image className="mdbvp:w-[88px] w-[60px] ml-10" src={headerlogo} alt="logo"/>
                     <HeaderNavigation aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
                     <HeaderRightblock/>
-                    <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo}/>
+                    <BurgerMenu aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo} isReviews={isReviews} setReviews={setReviews}/>
                 </div>
                 <Image className="lg:flex hidden"  src={downline} alt="line"/>
             </header>

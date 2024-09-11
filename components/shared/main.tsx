@@ -13,10 +13,11 @@ interface Props{
     reviews: any;
     price: any;
     scrollTo: any;
+    isReviews: boolean;
+    setReviews: Function;
 }
 
-const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, className}) => {
-    const [isReviews, setReviews] = useState<boolean>(false);
+const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, isReviews, setReviews, className}) => {
 
     return (
         <div className="flex flex-col">

@@ -25,7 +25,7 @@ export const AdaptiveAboutUs:React.FC<Props> = ({isReviews, setReviews, classNam
                 <div className="ml-5">
                     <div className="md:text-[48px] smbvp:text-[40px] sm:text-[36px] text-white font-semibold mt-5 italic">{t('title')}</div>
                     <Image className="mb-5" src={line} alt="logo"/>
-                        <div className={`md:text-[18px] [transition:0.5s] ${!isActive ? "h-[0vh]" : "h-[40vh]"} smbvp:text-[13px] text-[12px] px-4 mt-2 text-white font-semibold border-l-2 border-r-2 overflow-y-hidden`}>
+                        <div className={`md:text-[18px] [transition:0.5s] ${!isActive ? "h-[0vh]" : "h-full"} mb-3 smbvp:text-[13px] text-[12px] px-4 mt-2 text-white font-semibold border-l-2 border-r-2 overflow-y-hidden`}>
                             {t('firsttext')}{t('secondtext')}
                         </div>
                 </div>

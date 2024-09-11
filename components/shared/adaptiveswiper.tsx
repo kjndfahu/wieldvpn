@@ -18,10 +18,10 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
             <Swiper spaceBetween={30}
                     centeredSlides={true}
                     pagination={true}
-                    speed={1600}
+                    speed={1000}
                     touchRatio={1}
-                    touchAngle={30}
-                    threshold={30}
+                    touchAngle={10}
+                    threshold={10}
                     slidesPerView={1.35}
                     grabCursor={true}
                     loop={true}
