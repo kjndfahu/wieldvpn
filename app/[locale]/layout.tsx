@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import {Inter, Montserrat} from "next/font/google";
 import "../globals.css";
-import {Header} from "@/components/shared/header";
 import React, {ReactNode} from "react";
 import {getMessages} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
