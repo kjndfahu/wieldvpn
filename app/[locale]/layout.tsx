@@ -4,7 +4,6 @@ import "../globals.css";
 import React, {ReactNode} from "react";
 import {getMessages} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
-import Loading from "@/app/loading";
 
 const montserrat = Montserrat({
     weight: ['400', '600', '700'],

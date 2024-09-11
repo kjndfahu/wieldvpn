@@ -20,7 +20,7 @@ interface Props{
     isReviews: boolean;
     setReviews: Function;
 }
- const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className, isReviews, setReviews,}) => {
+export const Header: React.FC<Props> = ({aboutus, reviews, price, scrollTo,  className, isReviews, setReviews,}) => {
 
     return (
         <>
@@ -42,4 +42,3 @@ interface Props{
 
     )
 }
-export default Header;
