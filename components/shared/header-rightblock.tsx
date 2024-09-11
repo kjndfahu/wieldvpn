@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 
 import {useTranslations} from "next-intl";
@@ -13,7 +15,7 @@ export const HeaderRightblock: React.FC<Props> = ({className}) => {
     const t = useTranslations("HeaderRightblock")
     return (
         <>
-            <div className="lg:flex lg:gap-10 lg:text-white lg:text-[24px] lg:leading-6 lg:font-normal lg:mr-10 hidden items-center">
+            <div className="lg:flex lg:gap-10 lg:text-white lg:text-[24px] lg:leading-6 lg:font-normal lg:mr-10 hidden items-center z-[100]">
                 <Link href="https://help.wieldvpn.ru/">
                     <span className="cursor-pointerr">{t('help')}</span>
                 </Link>

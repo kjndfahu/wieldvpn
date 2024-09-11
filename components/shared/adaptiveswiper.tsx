@@ -1,10 +1,10 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Pagination} from "swiper/modules";
 import Image from 'next/image'
 import block from '../../assets/slideblock.png'
 import profile3d from '../../assets/prfile3d 2.png'
 import {useTranslations} from "next-intl";
+import { Autoplay, Pagination } from 'swiper/modules';
 
 interface Props{
     className?: string;
@@ -19,13 +19,14 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                     centeredSlides={true}
                     pagination={true}
                     speed={1000}
-                    touchRatio={1}
-                    touchAngle={10}
-                    threshold={10}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
                     slidesPerView={1.35}
-                    grabCursor={true}
+                    allowTouchMove={false}
                     loop={true}
-                    modules={[Pagination]}
+                    modules={[Pagination, Autoplay]}
                     className="flex items-center justify-center gap-[100px] w-[100vw] h-[500px]" >
 
                 <SwiperSlide className="bg-block h-[250px]">
@@ -67,10 +68,6 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                         <Image className=" z-[50] w-[100vw] h-[450px]" src={block} alt="block"/>
                     </div>
                 </SwiperSlide>
-
-
-
-
             </Swiper>
         </div>
 

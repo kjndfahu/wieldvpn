@@ -12,7 +12,7 @@ interface Props{
 export const Hero:React.FC<Props> = ({scrollTo, price, className}) => {
     const t = useTranslations("Hero")
     return (
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 ">
             <div className="flex flex-col lg:text-[64px] items-center font-bold text-white lghero:text-center lghero:mt-[158px] z-20 md:ml-12 md:text-[48px] lg:mt-[120px] mdbvp:mt-[70px] smbvp:ml-5 smbvp:text-[32px] sm:ml-3 sm:text-[28px]">
                     <h1><span className="text-[#00FFF0]">WieldVPN</span>{t('titleone')}<br/>
                         {t('titletwo')}</h1>
@@ -28,7 +28,7 @@ export const Hero:React.FC<Props> = ({scrollTo, price, className}) => {
                     </div>
                 </div>
             </div>
-            <Image className="absolute z-2" src={vpntext} alt="ssss"/>
+            <Image className="absolute z-2 " src={vpntext} alt="ssss"/>
         </div>
     )
 }
