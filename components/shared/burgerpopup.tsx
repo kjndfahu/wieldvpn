@@ -4,15 +4,11 @@ import Link from "next/link";
 
 interface Props{
     className?: string;
-    aboutus: any;
-    reviews: any;
-    price: any;
-    scrollTo: any;
     isReviews: boolean;
     setReviews: Function;
 }
 
-export const BurgerPopup: React.FC<Props> = ({aboutus, reviews, price, scrollTo, className, isReviews, setReviews}) => {
+export const BurgerPopup: React.FC<Props> = ({className, isReviews, setReviews}) => {
     const t = useTranslations('HeaderNavigation')
     return (
         <div className="flex flex-col absolute top-0 right-0 bg-[#333d41] w-[150px] h-[300px] [transition:1s] z-[100]">

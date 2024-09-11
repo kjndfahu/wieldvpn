@@ -3,7 +3,6 @@ import animation from '../../assets/animation.gif'
 import Image from 'next/image'
 import lights from '../../assets/lightadapreview.png'
 import wield from '../../assets/WIELD.png'
-import {Swiper} from "swiper/react";
 import {AdaptiveSwiper} from "@/components/shared/adaptiveswiper";
 import {MoveRight} from "lucide-react";
 import {useTranslations} from "next-intl";

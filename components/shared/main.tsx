@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Hero} from "@/components/shared/hero";
 import {AboutUs} from "@/components/shared/aboutus";
 import {Reviews} from "@/components/shared/reviews";

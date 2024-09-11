@@ -1,6 +1,6 @@
 'use client'
 
-import React, {Suspense, useState} from 'react'
+import React, {useState} from 'react'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import gsap from 'gsap';
 import {Header} from "@/components/shared/header";

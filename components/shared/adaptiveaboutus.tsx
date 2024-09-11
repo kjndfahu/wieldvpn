@@ -1,13 +1,10 @@
 import React from 'react'
-import block from '../../assets/aboutusblock.png'
 import Image from 'next/image'
 import line from "@/assets/line down text.png";
 import downline from "@/assets/down line.png";
 import downbutt from '../../assets/downbutt.png'
 import uppbtn from '../../assets/uppbtn.png'
-import {ChevronDown} from "lucide-react";
 import {useTranslations} from "next-intl";
-import set = gsap.set;
 
 interface Props{
     className?:string

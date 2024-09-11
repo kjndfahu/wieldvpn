@@ -55,7 +55,7 @@ export const BurgerMenu: React.FC<Props> = ({aboutus, reviews, price, scrollTo, 
             )}
 
             {isActive && (
-                <BurgerPopup aboutus={aboutus} reviews={reviews} price={price} scrollTo={scrollTo} isReviews={isReviews} setReviews={setReviews}/>
+                <BurgerPopup isReviews={isReviews} setReviews={setReviews}/>
             )}
         </div>
     )

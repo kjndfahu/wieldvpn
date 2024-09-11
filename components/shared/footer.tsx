@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from "next/image";
-import line from "@/assets/line down text.png";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
 

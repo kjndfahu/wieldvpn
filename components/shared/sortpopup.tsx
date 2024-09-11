@@ -1,6 +1,4 @@
-'use client'
-
-import React, {ChangeEvent, useState, useTransition} from 'react'
+import React, {ChangeEvent, useTransition} from 'react'
 import { useRouter } from 'next/navigation';
 import {useLocale} from "next-intl";
 
@@ -9,7 +7,6 @@ interface Props{
 }
 
 export const SortPopup: React.FC<Props> =({className}) => {
-    const [isActive, setActive] = React.useState(false)
     const [isPending, startTransition] = useTransition();
     const router = useRouter();
     const localActive = useLocale();

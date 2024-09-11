@@ -1,9 +1,4 @@
-'use client'
-
 import React from 'react'
-import Image from 'next/image'
-import {ChevronDown} from "lucide-react";
-import {BurgerMenu} from "@/components/shared/burgermenu";
 
 import {useTranslations} from "next-intl";
 import Link from "next/link";
@@ -15,7 +10,6 @@ interface Props{
 }
 
 export const HeaderRightblock: React.FC<Props> = ({className}) => {
-    const [isActive, setActive] = React.useState(false)
     const t = useTranslations("HeaderRightblock")
     return (
         <>
@@ -25,8 +19,6 @@ export const HeaderRightblock: React.FC<Props> = ({className}) => {
                 </Link>
                 <SortPopup/>
             </div>
-
-
         </>
     )
 }

@@ -1,15 +1,12 @@
 import React from 'react'
 import {cn} from "@/lib/utils";
 import light from '../../assets/light behind.png'
-import mainlogo from '../../assets/logo 3d.png'
 import Image from "next/image";
 import {HeaderNavigation} from "@/components/shared/header-navigation";
 import {HeaderRightblock} from "@/components/shared/header-rightblock";
 import headerlogo from '../../assets/headerlogo.png';
 import downline from "@/assets/down line.png";
 import {BurgerMenu} from "@/components/shared/burgermenu";
-import {useTranslations} from "next-intl";
-import {AdaptiveCheck} from "@/components/shared/adaptivecheck";
 
 interface Props{
     className?:string
