@@ -1,5 +1,5 @@
-import Image from "next/image";
 import biglogo from '../assets/logo-anim-blue-gif.gif'
+import Image from "next/image";
 
 export default function Loading(){
     return(
