@@ -20,7 +20,7 @@ interface Props{
 const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, isReviews, setReviews, className}) => {
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col overflow-x-hidden">
             {isReviews ? ('') : (<Hero scrollTo={scrollTo} price={price}/>)}
             <ReviewsAdaptive isReviews={isReviews} setReviews={setReviews}/>
             {isReviews ? ('') : (<AdaptiveAboutUs isReviews={isReviews} setReviews={setReviews}/>)}

@@ -28,7 +28,7 @@ export const SliderBlock: React.FC<Props> = ({className}) => {
                 slidesPerView={2}
                 loop={true}
                 modules={[Navigation, Pagination]}
-                className="flex items-center justify-center h-[42vh]">
+                className="flex items-center justify-center h-[20vh]">
 
                 <SwiperSlide className="text-white text-[32px] leading-[27px] w-[500px]">{t('text1')}</SwiperSlide>
 
