@@ -20,7 +20,7 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
     const handleClick = () => {
         setTimeout(() => {
             setActive(!isActive);
-        }, 700); // Задержка в 1 секунду
+        }, 1000); // Задержка в 1 секунду
     };
 
     return (
@@ -44,7 +44,7 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
                 {isActive ? (
                     <Image onClick={handleClick} src={uppbtn} alt="upp"/>
                 ) : (
-                    <Image onClick={handleClick} src={downbutt} alt="down"/>
+                    <Image onClick={() => setActive(!isActive)} src={downbutt} alt="down"/>
                 )}
             </div>
         </>
