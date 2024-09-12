@@ -21,7 +21,7 @@ export const AboutUs: React.FC<Props> = ({aboutus, className}) => {
                 className="flex flex-col z-10 items-center text-white max-w-[1030px] mt-[170px] mb-[140px]">
                 <h3 className="text-[48px] leading-[58px] italic font-semibold">{t('title')}</h3>
                 <Image src={line} alt="logo"/>
-                <p className="lg:flex hidden text-[24px] leading-6 font-semibold px-10 mt-10 border-l-2 border-r-2 ">{t('firsttext')}<br/>
+                <p className="lg:flex hidden text-[24px] text-center leading-6 font-semibold px-10 mt-10 border-l-2 border-r-2 ">{t('firsttext')}<br/>
                     {t('secondtext')}</p>
             </div>
             <Image className="sm" src={downline} alt="line"/>

@@ -25,7 +25,7 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
                         className="md:text-[48px] smbvp:text-[40px] sm:text-[36px] text-white font-semibold mt-5 italic">{t('title')}</div>
                     <Image className="mb-5" src={line} alt="logo"/>
                     <div
-                        className={`md:text-[18px] smbvp:text-[13px] mb-5 text-[12px] px-4 mt-2 text-white font-semibold border-l-2 border-r-2 overflow-hidden transition-all duration-700 ease-in-out ${
+                        className={`md:text-[18px] smbvp:text-[13px] mb-5 text-[12px] px-4 mt-2 text-white font-semibold border-l-2 border-r-2 overflow-hidden text-center transition-all duration-700 ease-in-out ${
                             isActive ? "max-h-[500px]" : "max-h-0"
                         }`}
                     >

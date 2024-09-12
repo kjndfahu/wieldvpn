@@ -18,7 +18,7 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
             <Swiper spaceBetween={30}
                     centeredSlides={true}
                     pagination={true}
-                    speed={1000}
+                    speed={2500}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -30,7 +30,7 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                     className="flex items-center justify-center gap-[100px] w-[100vw] h-[500px]" >
 
                 <SwiperSlide className="bg-block h-[250px]">
-                    <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
+                    <div className="flex text-center flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
                         <Image className="absolute z-[60]" src={profile3d} alt="profile3d"/>
                         <h2 className="absolute z-[60] mx-2 md:mt-[120px] smbvp:mt-[65px] sm:mt-[60px]">{t('text1')}</h2>
                         <Image className=" z-[50] w-[100vw] h-[450px]" src={block} alt="block"/>
@@ -38,7 +38,7 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                 </SwiperSlide>
 
                 <SwiperSlide className="bg-block">
-                    <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
+                    <div className="flex text-center flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
                         <Image className="absolute z-[60]" src={profile3d} alt="profile3d"/>
                         <h2 className="absolute z-[60] mx-2 md:mt-[120px] smbvp:mt-[65px] sm:mt-[60px]">{t('text2')}</h2>
                         <Image className=" z-[50] w-[100vw] h-[450px]" src={block} alt="block"/>
@@ -46,7 +46,7 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                 </SwiperSlide>
 
                 <SwiperSlide className="bg-block">
-                    <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
+                    <div className="flex text-center flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
                         <Image className="absolute z-[60]" src={profile3d} alt="profile3d"/>
                         <h2 className="absolute z-[60] mx-2 md:mt-[120px] smbvp:mt-[65px] sm:mt-[60px]">{t('text3')}</h2>
                         <Image className=" z-[50] w-[100vw] h-[450px]" src={block} alt="block"/>
@@ -54,7 +54,7 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                 </SwiperSlide>
 
                 <SwiperSlide className="bg-block">
-                    <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
+                    <div className="flex text-center flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
                         <Image className="absolute z-[60]" src={profile3d} alt="profile3d"/>
                         <h2 className="absolute z-[60] mx-2 md:mt-[120px] smbvp:mt-[65px] sm:mt-[60px]">{t('text4')}</h2>
                         <Image className=" z-[50] w-[100vw] h-[450px]" src={block} alt="block"/>
@@ -62,7 +62,7 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
                 </SwiperSlide>
 
                 <SwiperSlide className="bg-block">
-                    <div className="flex flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
+                    <div className="flex text-center flex-col items-center mdbvp:text-[24px] md:text-[22px] smbvp:text-[18px] sm:text-[16px] text-white py-3 ">
                         <Image className="absolute z-[60]" src={profile3d} alt="profile3d"/>
                         <h2 className="absolute z-[60] mx-2 md:mt-[120px] smbvp:mt-[65px] sm:mt-[60px]">{t('text5')}</h2>
                         <Image className=" z-[50] w-[100vw] h-[450px]" src={block} alt="block"/>
