@@ -21,10 +21,10 @@ export const SliderBlock: React.FC<Props> = ({className}) => {
         <div className="flex z-30 items-center justify-center mt-10 h-[60vh]">
             <Swiper
                 spaceBetween={50}
-                speed={2500}
+                speed={5000}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 1500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 allowTouchMove={false}

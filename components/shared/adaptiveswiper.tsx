@@ -18,9 +18,9 @@ export const AdaptiveSwiper: React.FC<Props> = ({className}) => {
             <Swiper spaceBetween={30}
                     centeredSlides={true}
                     pagination={true}
-                    speed={2500}
+                    speed={5000}
                     autoplay={{
-                        delay: 2500,
+                        delay: 5000,
                         disableOnInteraction: false,
                     }}
                     slidesPerView={1.35}

@@ -20,11 +20,11 @@ export const SortPopup: React.FC<Props> =({className}) => {
 
 
     return (
-        <label className='rounded block mb-2 text-[25px] font-medium text-gray-900  z-[100]'>
+        <label className='rounded block text-[25px] font-medium text-gray-900  z-[100]'>
             <p className='sr-only block  p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 '>change language</p>
             <select
                 defaultValue={localActive}
-                className='rounded-3xl bg-transparent z-[50] py-2 text-white text-[25px]'
+                className='rounded-3xl bg-transparent z-[50] text-white text-[25px]'
                 onChange={onSelectChange}
                 disabled={isPending}
             >
