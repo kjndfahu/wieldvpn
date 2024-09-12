@@ -34,11 +34,11 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
                 </div>
             </div>
             <Image className="flex lg:hidden" src={downline} alt="line"/>
-            <div className="flex items-center justify-end z-[100] lg:hidden overflow-hidden text-center transition-all duration-2000 ease-in-out">
+            <div className="flex items-center justify-end z-[100] lg:hidden overflow-hidden text-center">
                 {isActive ? (
-                    <Image onClick={() => setActive(!isActive)} src={uppbtn} alt="upp"/>
+                    <Image className="delay-[2s]" onClick={() => setActive(!isActive)} src={uppbtn} alt="upp"/>
                 ) : (
-                    <Image onClick={() => setActive(!isActive)} src={downbutt} alt="down"/>
+                    <Image className="delay-[2s]" onClick={() => setActive(!isActive)} src={downbutt} alt="down"/>
                 )}
             </div>
         </>
