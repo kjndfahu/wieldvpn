@@ -13,21 +13,22 @@ interface Props{
     reviews: any;
     price: any;
     scrollTo: any;
+    adaptiveabout: any;
     isReviews: boolean;
     setReviews: Function;
 }
 
-const Main: React.FC<Props> = ({aboutus, reviews, scrollTo, price, isReviews, setReviews, className}) => {
+const Main: React.FC<Props> = ({aboutus, adaptiveabout, reviews, scrollTo, price, isReviews, setReviews, className}) => {
 
     return (
         <div className="flex flex-col overflow-x-hidden">
             {isReviews ? ('') : (<Hero scrollTo={scrollTo} price={price}/>)}
             <ReviewsAdaptive isReviews={isReviews} setReviews={setReviews}/>
-            {isReviews ? ('') : (<AdaptiveAboutUs isReviews={isReviews} setReviews={setReviews}/>)}
+            {isReviews ? ('') : (<AdaptiveAboutUs adaptiveabout={adaptiveabout} isReviews={isReviews} setReviews={setReviews}/>)}
             <AboutUs aboutus={aboutus}/>
             <Reviews reviews={reviews}/>
             {isReviews ? ('') : (<BuyVpn price={price}/>)}
-            <Footer/>
+            <Footer scrollTo={scrollTo} adaptiveabout={adaptiveabout} setReviews={setReviews}/>
         </div>
     )
 }

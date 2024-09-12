@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { Navigation, Pagination } from 'swiper/modules';
+import {Autoplay } from 'swiper/modules';
 import {useTranslations} from "next-intl";
 
 interface Props{
@@ -18,17 +18,20 @@ export const SliderBlock: React.FC<Props> = ({className}) => {
     const t = useTranslations("Reviews")
 
     return (
-        <div className="flex z-30 items-center justify-center mt-10 h-[40vh]">
+        <div className="flex z-30 items-center justify-center mt-10 h-[50vh]">
             <Swiper
                 spaceBetween={70}
                 speed={1200}
                 centeredSlides={true}
-                navigation={true}
-                pagination={true}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                allowTouchMove={false}
                 slidesPerView={2}
                 loop={true}
-                modules={[Navigation, Pagination]}
-                className="flex items-center justify-center h-[20vh]">
+                modules={[Autoplay]}
+                className="flex items-center justify-center h-[40vh]">
 
                 <SwiperSlide className="text-white text-[32px] leading-[27px] w-[500px]">{t('text1')}</SwiperSlide>
 

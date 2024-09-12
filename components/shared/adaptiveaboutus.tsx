@@ -9,16 +9,17 @@ import {useTranslations} from "next-intl";
 interface Props{
     className?:string
     isReviews: boolean;
+    adaptiveabout: any;
     setReviews: Function;
 }
 
-export const AdaptiveAboutUs:React.FC<Props> = ({isReviews, setReviews, className}) => {
+export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setReviews, className}) => {
     const [isActive, setActive] = React.useState(false)
     const t = useTranslations("AboutUs")
 
     return (
         <>
-            <div className="flex flex-col bg-[#072535]/20 [box-shadow:inset_-1px_-5px_164px_-119px_rgba(65,176,232,1)] rounded-tl-[30px] rounded-tr-[30px]  z-30 justify-center mt-36 lg:hidden">
+            <div ref={adaptiveabout} className="flex flex-col bg-[#072535]/20 [box-shadow:inset_-1px_-5px_164px_-119px_rgba(65,176,232,1)] rounded-tl-[30px] rounded-tr-[30px]  z-30 justify-center mt-36 lg:hidden">
                 <div className="ml-5">
                     <div
                         className="md:text-[48px] smbvp:text-[40px] sm:text-[36px] text-white font-semibold mt-5 italic">{t('title')}</div>

@@ -13,7 +13,7 @@ interface Props{
     setReviews: Function;
 }
 
-export const ReviewsAdaptive: React.FC<Props> = ({isReviews, setReviews, className}) => {
+export const ReviewsAdaptive: React.FC<Props> = ({ isReviews, setReviews, className}) => {
     const t = useTranslations("Reviews")
     return (
         <div className="flex flex-col items-center justify-center mt-[200px] lg:hidden">

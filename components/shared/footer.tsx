@@ -4,9 +4,12 @@ import {useTranslations} from "next-intl";
 
 interface Props{
     className?: string;
+    adaptiveabout: any;
+    scrollTo: any;
+    setReviews: Function;
 }
 
-export const Footer: React.FC<Props> = ({className}) => {
+export const Footer: React.FC<Props> = ({adaptiveabout, setReviews, scrollTo, className}) => {
     const t = useTranslations('HeaderNavigation')
     return (
         <div className="flex items-center justify-center z-20 flex-col rounded-tl-[68px] gap-4 rounded-tr-[68px] bg-black mt-16 py-16 border border-white">
@@ -34,9 +37,12 @@ export const Footer: React.FC<Props> = ({className}) => {
                 <h3 className="text-white font-semibold md:text-[24px] leading-6 text-[32px]">Telegram</h3>
             </div>
 
-            <div className="flex md:flex-col">
+            <div className="flex md:flex-col md:gap-0 gap-[30px]">
                 <div className="flex md:flex-row md:text-[20px] leading-6 text-white md:gap-[31px] flex-col text-[15px] gap-2.5">
-                    <h4>{t('aboutus')}</h4>
+                    <h4 onClick={() => {
+                        scrollTo(adaptiveabout.current)
+                        setReviews(false)}
+                    }>{t('aboutus')}</h4>
                     <Link href="https://help.wieldvpn.ru/">
                         <h4>{t('help')}</h4>
                     </Link>
@@ -46,8 +52,8 @@ export const Footer: React.FC<Props> = ({className}) => {
                 </div>
 
                 <div className="mt-12 text-white md:text-center">
-                    <h5 className="md:text-[20px] leading-6 font-normal text-[15px]">abuse@wieldvpn.ru</h5>
-                    <h3 className="md:text-[24px] leading-[29px] font-semibold text-[10px]">©2022-2024 WieldVPN</h3>
+                    <h5 className="md:text-[20px] md:leading-6 leading-[26px] font-normal text-[15px]">abuse@wieldvpn.ru</h5>
+                    <h3 className="md:text-[24px] md:leading-[29px] leading-[20px] font-semibold text-[10px]">©2022-2024 WieldVPN</h3>
                 </div>
             </div>
         </div>
