@@ -5,6 +5,7 @@ import downline from "@/assets/down line.png";
 import downbutt from '../../assets/downbutt.png'
 import uppbtn from '../../assets/uppbtn.png'
 import {useTranslations} from "next-intl";
+import set = gsap.set;
 
 interface Props{
     className?:string
@@ -17,11 +18,6 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
     const [isActive, setActive] = React.useState(false)
     const t = useTranslations("AboutUs")
 
-    const handleClick = () => {
-        setTimeout(() => {
-            setActive(!isActive);
-        }, 1000); // Задержка в 1 секунду
-    };
 
     return (
         <>
@@ -42,7 +38,10 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
             <Image className="flex lg:hidden" src={downline} alt="line"/>
             <div className="flex items-center justify-end z-[100] lg:hidden overflow-hidden text-center duration-1000">
                 {isActive ? (
-                    <Image onClick={handleClick} src={uppbtn} alt="upp"/>
+                    <Image onClick={() => {
+                        setActive(!isActive)
+                        setTimeout(()=>console.log(123), 1000)
+                    }} src={uppbtn} alt="upp"/>
                 ) : (
                     <Image onClick={() => setActive(!isActive)} src={downbutt} alt="down"/>
                 )}
