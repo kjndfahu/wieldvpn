@@ -18,7 +18,7 @@ export const Reviews: React.FC<Props> = ({reviews, className}) => {
             <Image className="absolute z-60 top-[250px] w-full max-h-[2700px]" src={lights} alt="light"/>
             <h2 className="font-semibold text-white mdbvp:text-[96px] leading-[82px] mdbvp:ml-[136px] mdbvp:text-left sm:text-center  md:text-[64px] md:leading-[65px] smbvp:text-[40px] smbvp:leading-[45px]">{t('title')}<br/> {t('title2')}</h2>
             <Image className="self-center" src={minilogo} alt="minilogo"/>
-            <Image className="absolute z-1 right-0 lghero:top-[1200px] lghero:w-[600px] md:w-[500px] md:top-[1350px]" src={reviewlogo} alt="review"/>
+            <Image className="absolute z-1 right-0 lghero:top-[1100px] lghero:w-[600px] md:w-[500px] md:top-[1250px]" src={reviewlogo} alt="review"/>
             <SliderBlock/>
         </div>
     )
