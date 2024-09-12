@@ -17,6 +17,12 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
     const [isActive, setActive] = React.useState(false)
     const t = useTranslations("AboutUs")
 
+    const handleClick = () => {
+        setTimeout(() => {
+            setActive(!isActive);
+        }, 700); // Задержка в 1 секунду
+    };
+
     return (
         <>
             <div ref={adaptiveabout} className="flex flex-col bg-[#072535]/20 [box-shadow:inset_-1px_-5px_164px_-119px_rgba(65,176,232,1)] rounded-tl-[30px] rounded-tr-[30px]  z-30 justify-center mt-36 lg:hidden">
@@ -36,9 +42,9 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
             <Image className="flex lg:hidden" src={downline} alt="line"/>
             <div className="flex items-center justify-end z-[100] lg:hidden overflow-hidden text-center duration-1000">
                 {isActive ? (
-                    <Image onClick={() => setActive(!isActive)} src={uppbtn} alt="upp"/>
+                    <Image onClick={handleClick} src={uppbtn} alt="upp"/>
                 ) : (
-                    <Image onClick={() => setActive(!isActive)} src={downbutt} alt="down"/>
+                    <Image onClick={handleClick} src={downbutt} alt="down"/>
                 )}
             </div>
         </>
