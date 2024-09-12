@@ -31,7 +31,7 @@ export const ReviewsAdaptive: React.FC<Props> = ({ isReviews, setReviews, classN
             {isReviews ? (
                 <Image className="absolute z-[1] top-[100px] right-[170px] " src={animation} alt="anim"/>
             ) : (
-                <Image className="absolute z-[1] " src={animation} alt="anim"/>
+                <Image className="absolute z-[1] mdbvp:top-[230px]" src={animation} alt="anim"/>
             )}
             {isReviews && (
                 <>
