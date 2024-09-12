@@ -28,7 +28,7 @@ const Main: React.FC<Props> = ({aboutus, adaptiveabout, reviews, scrollTo, price
             <AboutUs aboutus={aboutus}/>
             <Reviews reviews={reviews}/>
             {isReviews ? ('') : (<BuyVpn price={price}/>)}
-            <Footer scrollTo={scrollTo} adaptiveabout={adaptiveabout} setReviews={setReviews}/>
+            <Footer scrollTo={scrollTo} aboutus={aboutus} adaptiveabout={adaptiveabout} setReviews={setReviews}/>
         </div>
     )
 }

@@ -23,14 +23,14 @@ export const SliderBlock: React.FC<Props> = ({className}) => {
                 spaceBetween={50}
                 speed={1200}
                 centeredSlides={true}
-                // autoplay={{
-                //     delay: 1500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
                 allowTouchMove={false}
                 slidesPerView={2}
                 loop={true}
-                // modules={[Autoplay]}
+                modules={[Autoplay]}
                 className="flex items-center justify-center h-[40vh]">
 
                 <SwiperSlide className="text-white text-[32px] leading-[27px] w-[550px]">{t('text1')}</SwiperSlide>

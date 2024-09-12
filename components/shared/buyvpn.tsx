@@ -26,7 +26,7 @@ export const BuyVpn: React.FC<Props> = ({price, className}) => {
 
                 </div>
                 <Image className="absolute z-10" src={bigletters} alt="bigletters"/>
-                <Image className="absolute z-[1] w-full mt-24" src={lights} alt="lights"/>
+                <Image className="absolute z-[1] w-full mt-24 max-h-[1300px]" src={lights} alt="lights"/>
             </div>
     )
 }

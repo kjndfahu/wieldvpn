@@ -53,7 +53,7 @@ export const ReviewsAdaptive: React.FC<Props> = ({ isReviews, setReviews, classN
             {isReviews ? ('') : (
                 <Image className="absolute z-[1] w-[90vw] mt-[550px]" src={wield} alt="letters"/>
             )}
-            <Image className="absolute z-[2] w-full" src={lights} alt="lights"/>
+            <Image className="absolute z-[2] w-full max-h-[1350px]" src={lights} alt="lights"/>
         </div>
     )
 }

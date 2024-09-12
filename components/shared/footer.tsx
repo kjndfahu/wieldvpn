@@ -5,12 +5,14 @@ import {useTranslations} from "next-intl";
 interface Props{
     className?: string;
     adaptiveabout: any;
+    aboutus: any;
     scrollTo: any;
     setReviews: Function;
 }
 
-export const Footer: React.FC<Props> = ({adaptiveabout, setReviews, scrollTo, className}) => {
+export const Footer: React.FC<Props> = ({adaptiveabout, aboutus, setReviews, scrollTo, className}) => {
     const t = useTranslations('HeaderNavigation')
+
     return (
         <div className="flex items-center justify-center z-20 flex-col rounded-tl-[68px] gap-4 rounded-tr-[68px] bg-black mt-16 py-16 border border-white">
             <div className="flex md:py-0 md:px-0 flex-row gap-1.5 md:border-none border-white border-[1px] py-[10px] px-[19px] rounded-[7px]">
@@ -40,9 +42,9 @@ export const Footer: React.FC<Props> = ({adaptiveabout, setReviews, scrollTo, cl
             <div className="flex md:flex-col md:gap-0 gap-[30px]">
                 <div className="flex md:flex-row md:text-[20px] leading-6 text-white md:gap-[31px] flex-col text-[15px] gap-2.5">
                     <h4 onClick={() => {
-                        scrollTo(adaptiveabout.current)
-                        setReviews(false)}
-                    }>{t('aboutus')}</h4>
+                        scrollTo(700)
+                        setReviews(false)
+                    }}>{t('aboutus')}</h4>
                     <Link href="https://help.wieldvpn.ru/">
                         <h4>{t('help')}</h4>
                     </Link>
