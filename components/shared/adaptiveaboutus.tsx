@@ -34,7 +34,7 @@ export const AdaptiveAboutUs:React.FC<Props> = ({adaptiveabout, isReviews, setRe
                 </div>
             </div>
             <Image className="flex lg:hidden" src={downline} alt="line"/>
-            <div className="flex items-center justify-end z-[100] lg:hidden overflow-hidden text-center delay-1000">
+            <div className="flex items-center justify-end z-[100] lg:hidden overflow-hidden text-center duration-1000">
                 {isActive ? (
                     <Image onClick={() => setActive(!isActive)} src={uppbtn} alt="upp"/>
                 ) : (
