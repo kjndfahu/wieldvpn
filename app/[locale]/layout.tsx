@@ -4,6 +4,8 @@ import "../globals.css";
 import React, {ReactNode} from "react";
 import {getMessages} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
+import {headers} from "next/headers";       // needed import
+import {notFound} from "next/navigation";
 
 const montserrat = Montserrat({
     weight: ['400', '600', '700'],
@@ -23,11 +25,16 @@ type Props = {
 
 export default async function RootLayout({children, params: {locale}}: Props) {
     const messages = await getMessages()
+    const header = headers();                               // new lines
+    const localeHeader = header.get('x-next-intl-locale'); // new lines
+    if (localeHeader === null) {                            // new lines
+        notFound();                                         // new lines
+    }
 
     return (
         <html lang={locale}>
         <body className={montserrat.className} >
-            <main className="min-h-screen bg-black">
+            <main className="min-h-screen">
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>

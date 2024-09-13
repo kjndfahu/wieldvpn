@@ -5,10 +5,11 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import gsap from 'gsap';
 import {Header} from "@/components/shared/header";
 import Main from "@/components/shared/main";
+import {notFound} from "next/navigation";
 
 
 
-export default function Home() {
+export default function Home({ params }: { params: { locale: string } }) {
     gsap.registerPlugin(ScrollToPlugin)
     const aboutus = React.useRef(null)
     const reviews = React.useRef(null)
@@ -16,6 +17,8 @@ export default function Home() {
     const adaptiveabout = React.useRef(null)
     const scrollTo = (target: any) => gsap.to(window, {duration: 1, scrollTo: target})
     const [isReviews, setReviews] = useState<boolean>(false);
+
+    console.log(params)
 
     return (
         <div className="w-[100vw]">

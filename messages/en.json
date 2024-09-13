@@ -39,6 +39,10 @@
     "text3": "I have been using this service for six months now. It is very easy to install and use, has high speed and always a stable connection. I have WieldVPN enabled almost all the time. If you have any questions, the support team is always ready to help around the clock!",
     "text4": "As the most casual user who is not very knowledgeable, I can only say that the speed of the VPN is just bomb!!! I'm very happy because in my experience it's the best VPN I've used, also absolutely all my issues are solved quickly!",
     "text5": "This is the best VPN I have ever used! Always at hand on all devices, has no problems with blocking. And if there are any problems, the support team will respond even deep into the night! Definitely with WieldVPN for a long time!"
+  },
+  "Error":{
+    "title": "Oops, mistake... This is the page",
+    "text": "You made a mistake somewhere because you went to a non-existent page. Please check if the link is correct."
   }
 }
 
