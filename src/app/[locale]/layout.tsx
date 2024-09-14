@@ -2,11 +2,11 @@ import type {Metadata} from "next";
 import {Montserrat} from "next/font/google";
 import "../globals.css";
 import React, {ReactNode} from "react";
-import {getMessages} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
 import {headers} from "next/headers";       // needed import
 import {notFound} from "next/navigation";
-import Head from "next/head";
+import {routing} from "@/i18n/routing";
+import {getMessages, unstable_setRequestLocale} from "next-intl/server";
 
 
 const montserrat = Montserrat({
@@ -28,9 +28,15 @@ type Props = {
     params: { locale: string }
 }
 
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({locale}));
+}
+
 
 export default async function RootLayout({children, params: {locale}}: Props) {
-    const messages = await getMessages()
+    const messages = await getMessages();
+    unstable_setRequestLocale(locale);
+
     const header = headers();
     const localeHeader = header.get('x-next-intl-locale');
     if (localeHeader === null) {

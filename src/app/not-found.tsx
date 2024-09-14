@@ -2,7 +2,7 @@
 
 import {Header} from "@/components/shared/header";
 import Image from 'next/image'
-import err from '../assets/404.png'
+import err from '../../assets/404.png'
 import React, {useState} from "react";
 import {useTranslations} from "next-intl";
 import gsap from "gsap";

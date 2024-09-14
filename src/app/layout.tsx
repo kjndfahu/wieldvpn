@@ -21,6 +21,7 @@ const montserrat = Montserrat({
 })
 
 export default function GlobalError({ children }: ErrorProps) {
+
     return (
         <html style={{background: 'black'}}>
         <body className={montserrat.className}>

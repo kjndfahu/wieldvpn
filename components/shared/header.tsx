@@ -4,7 +4,7 @@ import light from '../../assets/light behind.png'
 import Image from "next/image";
 import {HeaderNavigation} from "@/components/shared/header-navigation";
 import {HeaderRightblock} from "@/components/shared/header-rightblock";
-import headerlogo from '../../app/[locale]/logo.png';
+import headerlogo from '../../assets/headerlogo.png';
 import downline from "@/assets/down line.png";
 import {BurgerMenu} from "@/components/shared/burgermenu";
 
