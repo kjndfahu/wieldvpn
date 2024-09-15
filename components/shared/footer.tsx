@@ -32,6 +32,7 @@ export const Footer: React.FC<Props> = ({adaptiveabout, aboutus, setReviews, scr
                             fill="white"
                         />
                     </svg>
+
                     <h3 className="text-white font-semibold md:text-[24px] leading-6 text-[32px]">Telegram</h3>
                 </div>
             </Link>
