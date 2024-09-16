@@ -1,10 +1,10 @@
 import React from 'react'
 import {cn} from "@/lib/utils";
-import light from '../../assets/light behind.png'
+import light from '../../assets/light behind.webp'
 import Image from "next/image";
 import {HeaderNavigation} from "@/components/shared/header-navigation";
 import {HeaderRightblock} from "@/components/shared/header-rightblock";
-import headerlogo from '../../assets/headerlogo.png';
+import headerlogo from '../../assets/headerlogo.webp';
 import downline from "@/assets/down line.png";
 import {BurgerMenu} from "@/components/shared/burgermenu";
 
