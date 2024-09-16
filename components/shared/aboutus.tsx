@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import line from '../../assets/line down text.png'
-import biglogo from '../../assets/logo-anim-blue-gif (1).gif'
+import biglogo from '../../assets/big3dlogo.png'
 import lights from '../../assets/lights_aboutsus.webp'
 import downline from '../../assets/down line.png'
 import {useTranslations} from "next-intl";
