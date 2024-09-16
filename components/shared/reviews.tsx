@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import lights from '../../assets/light behind review.png'
+import lights from '../../assets/light behind review.webp'
 import reviewlogo from '../../assets/review 3d 1.png'
 import minilogo from '../../assets/prfile3d 1.png'
 import {SliderBlock} from "@/components/shared/sliderblock";
