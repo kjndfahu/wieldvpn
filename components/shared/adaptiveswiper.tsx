@@ -1,7 +1,7 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
 import Image from 'next/image'
-import block from '../../assets/slideblock.png'
+import block from '../../assets/slideblock.webp'
 import profile3d from '../../assets/prfile3d 2.png'
 import {useTranslations} from "next-intl";
 import { Autoplay, Pagination } from 'swiper/modules';
