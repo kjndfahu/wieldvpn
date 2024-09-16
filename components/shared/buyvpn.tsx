@@ -1,8 +1,8 @@
 import React from 'react'
 import {MoveDown} from "lucide-react";
 import Image from 'next/image'
-import lights from '../../assets/lights behind price.png'
-import bigletters from '../../assets/bigletters.png'
+import lights from '../../assets/lights behind price.webp'
+import bigletters from '../../assets/bigletters.webp'
 import {Buybtn} from "@/components/shared/buybtn";
 import {useTranslations} from "next-intl";
 
